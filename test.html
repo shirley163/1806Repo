@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="01.php" method="get">
+		<!-- input标签需要添加name属性,作为数据的键位,才能将数据传递 -->
+
+		<!-- text,password,添加value属性,属性值会显示在标签中,作为默认数据 -->
+		账号:<input type="text" name="userName" value="李四"><br>
+		密码:<input type="password" name="userPwd" value="666666"><br>
+
+		<!-- radio和checkbox标签,作为选项框,不能直接输入数据,只能通过input标签的value属性,给其添加属性 -->
+
+		<!-- radio和checkbox标签中,添加value属性,其属性值会作为标签的数据,传递给相应网站 -->
+
+		性别:男<input type="radio" name="sex" value="man">
+		     女<input type="radio" name="sex" value="woman"><br>
+		籍贯:北京<input type="radio" name="city" value="beijing">
+		     上海<input type="radio" name="city" value="shanghai">
+		     广州<input type="radio" name="city" value="guangzhou">
+		     重庆<input type="radio" name="city" value="重庆">
+		     天津<input type="radio" name="city" value="天津"><br>
+		爱好:吃<input type="checkbox" name="aihao[]" value="吃">
+		     喝<input type="checkbox" name="aihao[]" value="喝">
+		     玩<input type="checkbox" name="aihao[]" value="玩">
+		     乐<input type="checkbox" name="aihao[]" value="乐"><br>
+		照片:<input type="file" name="pic[]"><br>
+		照片:<input type="file" name="pic[]"><br>
+		照片:<input type="file" name="pic[]">
+		<input type="hidden" name="hidden" value="111"><br>
+
+		<!-- 给submit,reset,button添加value属性,属性值会作为内容,显示在按钮之中 -->
+		<input type="submit" name="" value="刷新">
+		<input type="reset" name="" value="刷新">
+		<input type="button" name="" value="注册">
+	</form>
+</body>
+</html>
